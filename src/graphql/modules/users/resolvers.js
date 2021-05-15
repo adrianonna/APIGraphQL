@@ -19,7 +19,7 @@ export default {
         },
         
         updateUser: (_, {id, data}) => User.findByIdAndUpdate(id, data, {new: true}), 
-        deleteUser: async (_, {id}) => !!(await User.findByIdAndDelete(id)) // !! força que o retorno seja um boolean
+        deleteUser: async (_, {id}) => !!(await User.findByIdAndDelete(id))
     },
     Subscription: {
         userAdded: {
