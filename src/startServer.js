@@ -1,4 +1,4 @@
-import { ApolloServer } from 'apollo-server';
+import { ApolloServer, PubSub } from 'apollo-server';
 import mongoose from 'mongoose';
 
 function startServer({typeDefs, resolvers}) {
